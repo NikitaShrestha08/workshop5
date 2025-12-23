@@ -1,0 +1,135 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page layout */
+body {
+    background-color:#e4dede; /* light background */
+    min-height: 100vh;
+    padding: 30px;
+    padding-bottom: 80px; /* space for footer */
+}
+
+/* Center content */
+body > * {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: #ffffff;
+    margin: 20px 0;
+
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card style */
+form, ul, .card {
+    background: #ebbbbb;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Links list */
+ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    background: #dc3545; /* red */
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background: #800000; /* maroon */
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #dc3545; /* red */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #800000; /* maroon */
+}
+
+/* Messages */
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Student list text */
+strong {
+    color: #333;
+}
+
+/* Footer fixed bottom & centered */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 12px;
+    color: #555;
+    border-top: 1px solid #ddd; 
+    display: contents;
+    
+}
