@@ -39,10 +39,18 @@ function uploadPortfolioFile($file) {
     }
 
     $newName = "portfolio_" . time() . "." . $extension;
-    $destination = "uploads/" . $newName;
+
+    $uploadDir = __DIR__ . DIRECTORY_SEPARATOR . 'uploads';
+    if (!is_dir($uploadDir)) {
+        if (!mkdir($uploadDir, 0755, true)) {
+            throw new Exception("Failed to create upload directory.");
+        }
+    }
+
+    $destination = $uploadDir . DIRECTORY_SEPARATOR . $newName;
 
     if (!move_uploaded_file($file['tmp_name'], $destination)) {
-        throw new Exception("Failed to move file.");
+        throw new Exception("Failed to move file to uploads directory.");
     }
 
     return $newName;
